@@ -1,0 +1,57 @@
+/* === GLOBALS === */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1.6rem;
+    box-sizing: border-box;
+    background: #FF9966;  /* fallback for old browsers */
+    background: 
+        -webkit-linear-gradient(to right, #FF5E62, #FF9966);  /* Chrome 10-25, Safari 5.1-6 */
+    background:         
+                linear-gradient(to right, #FF5E62, #FF9966); /* W3C, IE 10+ // Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after { box-sizing: inherit; }
+
+h1, 
+h2 {
+    text-align: center;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+h2 { color:white; }
+
+/* === STYLES === */
+.container {
+    margin: 2em auto;
+    max-inline-size: 100rem;
+    block-size: calc(100vh - 2rem);
+    padding-block: 2em 0;
+    padding-inline: 3em;
+    background-color: white;
+}
+
+.services {
+    /* display: flex; */
+    display: inline-flex;
+    border: .5em solid black;
+    border-radius: .5em;
+}
+
+.service { padding: 1em; }
+
+.service:nth-child(1) { background-color: #E53935; }
+
+.service:nth-child(2) { background-color: #8E24AA; }
+
+.service:nth-child(3) { background-color: #3F51B5; }
